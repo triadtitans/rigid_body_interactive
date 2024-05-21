@@ -23,7 +23,7 @@ jobs:
           python -m pip install -r requirements.txt
       - name: Build the JupyterLite site
         run: |
-          jupyter lite build --pyodide https://github.com/pyodide/pyodide/releases/download/0.25.1/pyodide-core-0.25.1.tar.bz2 --contents content --output-dir dist
+          jupyter lite build --pyodide https://github.com/pyodide/pyodide/releases/download/0.25.1/pyodide-0.25.1.tar.bz2 --contents content --output-dir dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
